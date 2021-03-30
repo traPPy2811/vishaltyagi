@@ -1,0 +1,16 @@
+:root {
+  --primary-color: #2b2e4a;
+  --white-color: white;
+}
+.hamberger {
+  border: 3px solid red;
+  height: 3rem;
+  width: 3rem;
+  left: 1rem;
+  bottom: 1rem;
+  position: fixed;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}

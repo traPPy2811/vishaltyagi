@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,400;0,600;0,700;0,900;1,400&family=Vollkorn:ital,wght@0,700;0,900;1,400&display=swap");
+:root {
+  --primary-color: #2b2e4a;
+  --white-color: white;
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Vollkorn", serif;
+  font-family: "Poppins", sans-serif;
+}
+nav {
+  display: inline-flex;
+  height: 100vh;
+  width: 5vw;
+  min-width: 4vw;
+  background-color: var(--primary-color);
+  position: fixed;
+  align-items: center;
+  justify-content: flex-start;
+  transition: all 0.5s ease-out;
+}
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  display: flex;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: display 0.7s ease-in-out;
+}
+nav ul li a:hover .icon {
+  opacity: 0.8;
+}
+
+nav ul {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
+  min-height: 50%;
+  min-width: 50%;
+  margin: 1rem;
+}
+nav .icon {
+  display: block;
+  font-size: 1.2rem;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.title {
+  display: none;
+  margin-left: 1.2rem;
+  font-size: 1rem;
+}
+.title-active {
+  display: inline;
+}
+nav .drawer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: 3px solid var(--white-color);
+  position: absolute;
+  top: calc(50% - 1rem);
+  right: -1rem;
+  cursor: pointer;
+}
+
+nav .drawer::before {
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  color: var(--white-color);
+  font-size: 1.2rem;
+  display: inline-block;
+  font-style: normal;
+  font-variant: normal;
+  text-rendering: auto;
+  -webkit-font-smoothing: antialiased;
+}
+
+nav .drawer:hover::before {
+  opacity: 0.8;
+}
+nav .active::before {
+  content: "\f104";
+}
+.nav-active {
+  width: 20vw;
+}
+
+/* Connect details */
+
+.connect-details {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: center;
+  height: 25vh;
+  width: 80vw;
+  margin: 0 auto;
+}
+.connect-details .icon {
+  color: var(--primary-color);
+  font-size: 0.8rem;
+  line-height: 25px;
+}
+.connect-details .icon .text {
+  margin-left: 0.5rem;
+  font-weight: 700;
+}
+
+/* Social Media */
+
+.social-media {
+  display: flex;
+  height: 100vh;
+  width: 10vw;
+  background-color: var(--white-color);
+  color: var(--primary-color);
+  position: fixed;
+  right: 0;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.5s ease-out;
+}
+.social-media ul li {
+  list-style: none;
+}
+.social-media ul li a {
+  display: flex;
+  text-decoration: none;
+  color: var(--primary-color);
+  transition: display 0.7s ease-in-out;
+}
+.social-media ul {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 50%;
+  min-width: 50%;
+  margin: 1rem;
+}
+.social-media .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  font-size: 1.2rem;
+  transition: all 0.8s ease-in-out;
+}
+.social-icon:hover {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+
+/* Main content */
+.main-content {
+  width: 80vw;
+  height: 75vh;
+  margin: 0 auto;
+}
+.name {
+  width: 80%;
+  margin: 0 auto;
+  /* font-family: "Vollkorn", serif; */
+}
+.name-title {
+  text-transform: uppercase;
+  color: var(--primary-color);
+  font-size: 2rem;
+  letter-spacing: 5px;
+}
+.pitch-line::before {
+  content: "";
+  display: block;
+  height: 20px;
+}
+.pitch-line,
+.pitch-line2 {
+  font-weight: normal;
+  font-size: 1rem;
+  color: var(--primary-color);
+}
