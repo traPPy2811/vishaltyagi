@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link rel="stylesheet" href="./globalStyle.css">
-    <link rel="stylesheet" href="./hamberger.css">
+    <link rel="stylesheet" href="./about.css">
     <script src="./app.js" defer></script>
 </head>
 <body>
@@ -20,7 +20,7 @@
                 <span class="title">Home</span>
                 
             </a></li>
-            <li> <a href="#">
+            <li> <a href="#ABOUT">
                
                 <span class="title">About me</span>
                 
@@ -38,6 +38,9 @@
                             
             </a></li>
         </ul>
+        <div class="hamburger">
+            <div class="hamburger-menu"></div>
+        </div>
     </nav>
     <div class="social-media">
         <ul>
@@ -51,30 +54,50 @@
    
     <div class="main-content">
         <div class="name">
+            <div class="name-container">
+            <!-- <div class="sub-head"><span>Hello, My name is</span></spab></div> -->
             <h1 class="name-title">Vishal Tyagi</h1>
-            <h6 class="pitch-line">A Computer Science and engineering Student passionate about
-            </h6>
-            <h6 class="pitch-line2">Programming, Web Development and UI Design</h6>
+            <p class="pitch-line">A Computer Science and engineering Student passionate about
+                <br> Programming, Web Development and UI Design
+                </p>
+            </div>
+            <a href="./vtr.pdf" download="VishalTyagiResume">
+            <button class="btn"><i class="fas fa-download"></i> Resume</button>
+            </a>
+            <div class="connect-details">
+                <div class="container">
+                <div class="email-id">
+                    <span class="icon"><i class="fas fa-envelope"></i>
+                        <span class="text">tyagivishal227@gmail.com</span>
+                    </span>
+                    
+                </div>
+                <div class="mob-no">
+                    <span class="icon"><i class="fas fa-mobile-alt"></i>
+                        <span class="text">+91 8279499207</span>
+                    </span>
+                    
+                </div>
+                <div class="location">
+                    <span class="icon"><i class="fas fa-map-marker-alt"></i>
+                    <span class="text">Uttar Pradesh, India</span>
+                </span>
+                </div>
+                </div>
+            </div>
         </div>
-        <div class="connect-details">
-            <div class="container">
-            <div class="email-id">
-                <span class="icon"><i class="fas fa-envelope"></i>
-                    <span class="text">tyagivishal227@gmail.com</span>
-                </span>
+        
+        
+    </div>
+    <div class="about-content">
+        <h3 class="about-title" id="ABOUT">About me</h3>
+        <div class="about-article">
+            <!-- <div class="image"></div> -->
+            <div class="about-text">
                 
-            </div>
-            <div class="mob-no">
-                <span class="icon"><i class="fas fa-mobile-alt"></i>
-                    <span class="text">+91 8279499207</span>
-                </span>
-                
-            </div>
-            <div class="location">
-                <span class="icon"><i class="fas fa-map-marker-alt"></i>
-                <span class="text">Uttar Pradesh, India</span>
-            </span>
-            </div>
+                <p>My name is Vishal Tyagi. I am a B.Tech(CSE) student at ABES Engineering College, Ghaziabad.I was born and raised in Meerut Uttar Pradesh.
+                </p>
+                   <p>I did Three Year Diploma from Government Polytechnic, Saharanpur. </p>
             </div>
         </div>
     </div>
