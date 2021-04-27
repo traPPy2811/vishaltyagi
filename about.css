@@ -221,6 +221,22 @@
   margin-left: 2em;
 }
 
+.about-text p {
+  transform: translateY(-30px);
+  opacity: 0;
+  animation: about-load 300ms ease-in forwards;
+  animation-delay: 300ms;
+}
+@keyframes about-load {
+  0% {
+    transform: translateY(-30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0px);
+    opacity: 1;
+  }
+}
 @media screen and (max-width: 900px) {
   .about-text {
     flex-direction: column;
