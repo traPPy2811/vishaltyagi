@@ -23,16 +23,16 @@ document.querySelector(".light-mode").addEventListener("click",()=>{
     document.querySelector(".wrapper").classList.toggle('dark-theme');
     document.querySelector(".pic").classList.toggle('inverted');
 })
-window.addEventListener("load",()=>{
-    var themeVal=window.getComputedStyle(root,null).getPropertyValue("--prefer-mode");
-    themeVal=themeVal.slice(2,themeVal.length-1);
-    if(themeVal==="dark")
-    { 
-        document.querySelector(".light-mode").classList.toggle("dark-mode");
-        document.querySelector(".wrapper").classList.toggle('dark-theme');
-        document.querySelector(".pic").classList.toggle('inverted');
-    } 
-})
+// window.addEventListener("load",()=>{
+//     var themeVal=window.getComputedStyle(root,null).getPropertyValue("--prefer-mode");
+//     themeVal=themeVal.slice(2,themeVal.length-1);
+//     if(themeVal==="dark")
+//     { 
+//         document.querySelector(".light-mode").classList.toggle("dark-mode");
+//         document.querySelector(".wrapper").classList.toggle('dark-theme');
+//         document.querySelector(".pic").classList.toggle('inverted');
+//     } 
+// })
 
 window.addEventListener("scroll",()=>{
   document.querySelector(".top").classList.toggle("top-active",window.scrollY>500);

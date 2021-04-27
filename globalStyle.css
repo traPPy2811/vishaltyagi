@@ -3,7 +3,7 @@
   --primary-color: #2a4158;
   --white-color: white;
   --bg-color: #fff;
-  --prefer-mode: "light";
+  /* --prefer-mode: "light"; */
   --alt-color: #f1f1f1;
 }
 html {
@@ -425,11 +425,11 @@ html.transition *::before {
 .top-active {
   transform: translate(50%, 0%);
 }
-@media (prefers-color-scheme: dark) {
+/* @media (prefers-color-scheme: dark) {
   :root {
     --prefer-mode: "dark";
   }
-}
+} */
 
 /* Animation part */
 
