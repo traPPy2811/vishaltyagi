@@ -1,9 +1,4 @@
 /* About Content */
-:root {
-  --primary-color: #2b2e4a;
-  --white-color: white;
-  --bg-color: #f3f2ef;
-}
 .about-content {
   color: var(--primary-color);
   display: flex;
@@ -12,17 +7,25 @@
   justify-content: space-evenly;
   position: relative;
   width: 80vw;
-  height: 100vh;
+  height: auto;
   max-width: 1240px;
-  background-color: var(--bg-alternate-color);
+  background-color: var(--alt-color);
   margin: 0 auto;
 }
-.about-title {
+.p-title,
+.edu-title,
+.about-title,
+.skill-title {
   font-size: 1.3em;
   font-weight: 700;
+  color: var(--primary-color);
   position: relative;
+  margin-top: 1.5em;
 }
-.about-title::after {
+.p-title::after,
+.edu-title::after,
+.about-title::after,
+.skill-title::after {
   content: "";
   position: absolute;
   height: 2px;
@@ -31,32 +34,199 @@
   left: 0;
   bottom: -1em;
   margin-left: -5%;
-  transform: scaleX(0);
+  transform: scaleX(1);
   transition: all 0.5s ease-in-out;
 }
-.about-title:hover:after {
-  transform: scaleX(1);
+.p-title:hover::after,
+.edu-title:hover::after,
+.about-title:hover::after,
+.skill-title:hover::after {
+  transform: scaleX(0);
 }
-.about-article {
-  /* outline: 3px solid red; */
+.about-text {
+  width: 70%;
+  margin: 0 auto;
+  text-align: justify;
+  text-justify: inter-word;
+  margin: 2em;
+}
+.about-text p {
+  max-width: 60%;
+  font-size: 0.8em;
+  font-weight: 600;
+  line-height: 1.8em;
+}
+.education {
+  max-width: 1240px;
+  width: 80vw;
+  height: auto;
+  margin: 0 auto;
+  background-color: var(--bg-color);
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
+  color: var(--primary-color);
+}
+.education .btech {
+  width: 100%;
+  height: auto;
+  margin: 2em auto;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
+  color: inherit;
+}
+.education .btech h3 {
+  font-size: 1.1em;
+  letter-spacing: 2px;
+  color: inherit;
+}
+.education .btech p {
+  display: inline;
+  font-size: 0.8em;
+  font-weight: 600;
+  font-style: oblique;
+}
+.education .btech .name {
+  font-style: normal;
+}
+.education .btech span {
+  display: inline;
+  font-size: 0.7em;
+  margin-top: max(10px, 0.5em);
+}
+.edu-info {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  margin-top: 2em;
+}
+.pic {
+  width: 10em;
+  height: 10em;
+  overflow: hidden;
+  border: 0.4em solid var(--primary-color);
+  border-radius: 50%;
+  position: relative;
+  transition: all 0.5s ease-in-out;
+  background-color: #ffffff;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 2000 1500'%3E%3Cdefs%3E%3Crect stroke='%23ffffff' stroke-width='.5' width='1' height='1' id='s'/%3E%3Cpattern id='a' width='3' height='3' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cuse fill='%23fafafa' href='%23s' y='2'/%3E%3Cuse fill='%23fafafa' href='%23s' x='1' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s' x='2' y='2'/%3E%3Cuse fill='%23f5f5f5' href='%23s'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='2'/%3E%3Cuse fill='%23f0f0f0' href='%23s' x='1' y='1'/%3E%3C/pattern%3E%3Cpattern id='b' width='7' height='11' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s'/%3E%3Cuse href='%23s' y='5' /%3E%3Cuse href='%23s' x='1' y='10'/%3E%3Cuse href='%23s' x='2' y='1'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='8'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='5' y='2'/%3E%3Cuse href='%23s' x='5' y='6'/%3E%3Cuse href='%23s' x='6' y='9'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='h' width='5' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ebebeb'%3E%3Cuse href='%23s' y='5'/%3E%3Cuse href='%23s' y='8'/%3E%3Cuse href='%23s' x='1' y='1'/%3E%3Cuse href='%23s' x='1' y='9'/%3E%3Cuse href='%23s' x='1' y='12'/%3E%3Cuse href='%23s' x='2'/%3E%3Cuse href='%23s' x='2' y='4'/%3E%3Cuse href='%23s' x='3' y='2'/%3E%3Cuse href='%23s' x='3' y='6'/%3E%3Cuse href='%23s' x='3' y='11'/%3E%3Cuse href='%23s' x='4' y='3'/%3E%3Cuse href='%23s' x='4' y='7'/%3E%3Cuse href='%23s' x='4' y='10'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='c' width='17' height='13' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23e5e5e5'%3E%3Cuse href='%23s' y='11'/%3E%3Cuse href='%23s' x='2' y='9'/%3E%3Cuse href='%23s' x='5' y='12'/%3E%3Cuse href='%23s' x='9' y='4'/%3E%3Cuse href='%23s' x='12' y='1'/%3E%3Cuse href='%23s' x='16' y='6'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='d' width='19' height='17' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23ffffff'%3E%3Cuse href='%23s' y='9'/%3E%3Cuse href='%23s' x='16' y='5'/%3E%3Cuse href='%23s' x='14' y='2'/%3E%3Cuse href='%23s' x='11' y='11'/%3E%3Cuse href='%23s' x='6' y='14'/%3E%3C/g%3E%3Cg fill='%23e0e0e0'%3E%3Cuse href='%23s' x='3' y='13'/%3E%3Cuse href='%23s' x='9' y='7'/%3E%3Cuse href='%23s' x='13' y='10'/%3E%3Cuse href='%23s' x='15' y='4'/%3E%3Cuse href='%23s' x='18' y='1'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='e' width='47' height='53' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='2' y='5'/%3E%3Cuse href='%23s' x='16' y='38'/%3E%3Cuse href='%23s' x='46' y='42'/%3E%3Cuse href='%23s' x='29' y='20'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='f' width='59' height='71' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='33' y='13'/%3E%3Cuse href='%23s' x='27' y='54'/%3E%3Cuse href='%23s' x='55' y='55'/%3E%3C/g%3E%3C/pattern%3E%3Cpattern id='g' width='139' height='97' patternUnits='userSpaceOnUse' patternTransform='scale(50) translate(-980 -735)'%3E%3Cg fill='%23F60'%3E%3Cuse href='%23s' x='11' y='8'/%3E%3Cuse href='%23s' x='51' y='13'/%3E%3Cuse href='%23s' x='17' y='73'/%3E%3Cuse href='%23s' x='99' y='57'/%3E%3C/g%3E%3C/pattern%3E%3C/defs%3E%3Crect fill='url(%23a)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23b)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23h)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23c)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23d)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23e)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23f)' width='100%25' height='100%25'/%3E%3Crect fill='url(%23g)' width='100%25' height='100%25'/%3E%3C/svg%3E");
+  background-size: cover;
+}
+.inverted {
+  filter: invert(100%) hue-rotate(180deg);
+}
+.pic img {
+  width: 160%;
+  height: 160%;
+  object-fit: contain;
+  object-position: left top;
+  transform: translate(-8%, 4%);
+  z-index: 3;
 }
 .about-text {
-  width: 60%;
-  margin: 0 auto;
-  text-align: justify;
-  text-justify: inter-word;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
-.image {
-  display: none;
-  background-image: url("./22.png");
-  background-size: contain;
-  min-height: 200px;
-  min-width: 200px;
-  width: 50%;
-  height: 50%;
-  background-repeat: no-repeat;
+.technical {
+  width: 100%;
+  background-color: var(--alt-color);
+}
+.tech-skill {
+  display: flex;
+  flex-direction: column;
+  width: 70%;
+  margin: 2em auto;
+  align-items: center;
+  justify-content: space-between;
+}
+.skill-contain {
+  margin-top: 2em;
+  width: 100%;
+}
+.java i {
+  color: var(--white-color);
+  background-color: var(--primary-color);
+  padding: 3px;
+  border-radius: 5px;
+}
+.cpp-sv {
+  height: 1em;
+  width: auto;
+}
+.cpp-sv path {
+  fill: var(--primary-color);
+}
+.cl,
+.cpp,
+.java,
+.html,
+.css,
+.js,
+.fg {
+  width: 100%;
+  padding: 1em;
+
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin-top: 1em;
+  border-bottom: 1px dotted var(--primary-color);
+  position: relative;
+}
+.cl div,
+.cpp div,
+.java div,
+.html div,
+.css div,
+.js div,
+.fg div {
+  width: 10%;
+}
+.skill-contain div::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  background-color: var(--primary-color);
+  opacity: 0.1;
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: all 0.3s ease-in-out;
+}
+.skill-contain div:hover::after {
+  transform: scaleX(1);
+}
+.cl span,
+.cpp span,
+.java span,
+.html span,
+.css span,
+.js span,
+.fg span {
+  font-size: 0.8em;
+  font-weight: 600;
+}
+.skill-contain i {
+  font-size: 1em;
+}
+.skill-contain span {
+  width: 60%;
+  margin-left: 2em;
+}
+
+@media screen and (max-width: 900px) {
+  .about-text {
+    flex-direction: column;
+  }
+  .about-text div {
+    margin-top: 1em;
+    margin-bottom: 1em;
+  }
 }

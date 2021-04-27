@@ -1,0 +1,215 @@
+.contact-contain {
+  width: 80vw;
+  margin: 0 auto;
+  min-height: 100vh;
+  height: auto;
+  max-width: 1240px;
+  background-color: var(--alt-color);
+  position: relative;
+  color: var(--primary-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+.contact-contain div {
+  margin-top: 2em;
+}
+.bg-effect {
+  height: auto;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  justify-content: flex-end;
+  position: relative;
+}
+.bg-effect svg path {
+  fill: var(--primary-color);
+}
+.message-container {
+  width: 70%;
+  height: 100%;
+  z-index: 10;
+  color: var(--primary-color);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.form-connect {
+  width: 50%;
+  height: 80vh;
+  outline: 3px solid var(--primary-color);
+  position: relative;
+}
+.form-connect::after {
+  content: "";
+  position: absolute;
+  height: 5px;
+  width: 100%;
+  bottom: 0;
+  background-color: var(--primary-color);
+  transform: scaleY(0);
+  transform-origin: bottom;
+  transition: all 0.3s ease;
+}
+.form-connect:hover::after {
+  transform: scaleY(1);
+}
+.form-connect form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+  padding: 1em;
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.form-connect form div {
+  margin: 10px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 100%;
+}
+.form-connect form label {
+  font-size: 0.8em;
+  letter-spacing: 2px;
+  font-weight: 600;
+}
+.form-connect form input,
+.form-connect form textarea {
+  margin: 10px 0;
+  padding: 5px;
+  border: 2px solid var(--primary-color);
+  border-radius: 5px;
+  width: 100%;
+  font-size: 0.8em;
+  color: var(--primary-color);
+  font-family: "Poppins", sans-serif;
+  z-index: 20;
+  background: transparent;
+}
+.form-connect form input:focus::placeholder,
+.form-connect form textarea:focus::placeholder {
+  opacity: 0.7;
+}
+.form-connect form button {
+  font-size: 0.8em;
+  align-self: center;
+  padding: 5px 10px;
+  outline: none;
+  background-color: var(--primary-color);
+  color: var(--white-color);
+  border-radius: 5px;
+  border-color: var(--primary-color);
+  cursor: pointer;
+  margin-top: 1em;
+  transition: all 0.5s ease-in-out;
+}
+.form-connect form button:hover {
+  background-color: var(--white-color);
+  color: var(--primary-color);
+}
+textarea {
+  resize: none;
+}
+.email-connect {
+  width: 40%;
+  height: 60vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.email-connect p {
+  font-size: 0.8em;
+  font-weight: 600;
+  letter-spacing: 2px;
+  padding: 1em;
+  justify-self: center;
+}
+.email-connect p span {
+  margin-left: 5px;
+}
+
+/* Social Media */
+
+.social-media-footer {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  align-items: center;
+  justify-content: center;
+  background: transparent;
+  transition: all 0.5s ease-out;
+  width: 100%;
+}
+.social-media-footer ul li {
+  list-style: none;
+}
+.social-media-footer ul li a {
+  display: flex;
+  text-decoration: none;
+  color: var(--white-color);
+  transition: display 0.7s ease-in-out;
+}
+.social-media-footer ul {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  min-height: 50%;
+  min-width: 50%;
+  margin: 1em;
+}
+.social-media-footer .social-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 2em;
+  width: 2em;
+  border-radius: 50%;
+  font-size: 1.2em;
+  transition: all 0.5s ease-in-out;
+  color: var(--white-color);
+  background-color: var(--primary-color);
+}
+.social-media-footer .social-icon:hover {
+  color: var(--primary-color);
+  background-color: var(--white-color);
+}
+
+.error-msg {
+  background-color: rgba(0, 128, 0, 0.329);
+  border-left: 3px solid rgb(2, 97, 2);
+  color: var(--primary-color);
+}
+.error-msg p {
+  font-size: 0.8em;
+}
+.error {
+  background-color: rgba(255, 0, 0, 0.329);
+  border-left: 3px solid red;
+}
+@media screen and (max-width: 900px) {
+  .social-media-footer {
+    display: flex;
+  }
+  .social-media-footer .social-icon {
+    height: 2em;
+    width: 2em;
+    font-size: 0.8em;
+  }
+  .message-container {
+    flex-direction: column;
+    width: 70%;
+  }
+  .form-connect {
+    width: 100%;
+  }
+  .email-connect {
+    width: 100%;
+    height: 30vh;
+  }
+}
