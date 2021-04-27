@@ -48,7 +48,7 @@
   margin: 0 auto;
   text-align: justify;
   text-justify: inter-word;
-  margin: 2em;
+  margin: 2em 0;
 }
 .about-text p {
   max-width: 60%;
@@ -220,23 +220,6 @@
   width: 60%;
   margin-left: 2em;
 }
-
-.about-text p {
-  transform: translateY(-30px);
-  opacity: 0;
-  animation: about-load 300ms ease-in forwards;
-  animation-delay: 300ms;
-}
-@keyframes about-load {
-  0% {
-    transform: translateY(-30px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 @media screen and (max-width: 900px) {
   .about-text {
     flex-direction: column;
@@ -244,5 +227,12 @@
   .about-text div {
     margin-top: 1em;
     margin-bottom: 1em;
+  }
+}
+@media screen and (max-width: 500px) {
+  .about-text,
+  .about-text p {
+    width: 100%;
+    max-width: 90%;
   }
 }
